@@ -1,0 +1,47 @@
+root {
+    --red: #FF0000;
+    --white: #EBEBEB;
+    --green: #00FF00;
+    --gold: #FFD700;
+    --dodger: #1e90ff;
+}
+
+body {
+    text-align: center;
+}
+
+.heads {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 200px;
+    border: 1px solid green;
+}
+
+.head, .sub-head {
+    margin: auto;
+    width: 600px;
+    border: 1px solid red;
+}
+
+.header {
+    background-image: url(images/LA_skyline.jpg);
+    background-size: cover;
+    width: 1200px;
+    height: 600px;;
+    border: 1px solid black;
+    margin: auto;
+
+}
+
+.locations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.pics {
+    width: 400px;
+    border-radius: 50%;
+}
