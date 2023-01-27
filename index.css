@@ -1,31 +1,121 @@
-root {
+:root {
     --red: #FF0000;
     --white: #EBEBEB;
     --green: #00FF00;
     --gold: #FFD700;
     --dodger: #1e90ff;
+    --silver: #C0C0C0;
 }
 
 body {
     text-align: center;
+    background-image: url(images/Flag_of_LA.png);
+    /*
+    THE LINES OF CODE BELOW AFFECT IMAGE SIZE
+     TO EITHER COVER THE ENTIRE PAGE OR A PORTION
+    THE REPEAT FUNCTION AFFECTS IMAGE REPEATING, 
+    ie. MULTI SQUARES
+    IN THIS CASE IT IS SET TO "NO-REPEAT" 
+    MEANIN THE IMAGE WILL NOT REPEAT
+    */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    THE LINE OF CODE BELOW PREVENTS
+     THE BACKGROUND-IMAGE FROM MOVING
+    WHEN YOU SCROLL THE PAGE UP AND DOWN
+    */
+    background-attachment: fixed;
+    /*
+    WOULD BE INTERESTING TO SEE
+    MULTIPLE PHOTOS ALIGNED TO
+    SCROLL UP AND DOWN WITH PAGE 
+    SUCH AS A COLLAGE
+    */
+    /*
+    THE BACKGROUND PROPERTY BELOW 
+    INDICATES THE BACKGROUND IMAGE
+    WILL REMAIN CENTERED DURING
+    RESIZING OF WINDOW
+    */
+    background-position: center;
+}
+
+
+
+.decor {
+    margin: 10px auto;
+    padding: 15px 20px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: var(--silver);
+    width: 400px;
+}
+
+.business-card {
+    /*
+    COME BACK AND EDIT THIS SECTION
+    DISPLAY FLEX ISN'T OPERATING CORRECTLY
+    CHECK SYNTAX
+    POSSIBLE FIX INCLUDES CHANGING DIV ORDER
+    SUCH AS BUSINESS CARD APP
+    DOUBLE CHECK AND EDIT THIS COULD 
+    BE AN EASY FIX
+    */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px auto;
+    width: 400px;
+    border: 5px solid black;
+    border-radius: 25px 25px 0 0;
+    background-color: var(--dodger);
+    /*
+    POSSIBLE TEXT SHADOW HERE
+    DEPENDING ON BUSINESS CARD 
+    BACKGROUND COLORS AND SUCH
+    REVISIT WHEN DESIGINING
+    */
+}
+
+.avatar {
+    margin: 15px;
+    width: 150px;
+    border-radius: 25px 25px 0 0;
+}
+
+.card-text {
+    margin: 5px;
 }
 
 .heads {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-top: 200px;
-    border: 1px solid green;
+    margin-top: 200px;
 }
 
 .head, .sub-head {
     margin: auto;
-    width: 600px;
-    border: 1px solid red;
+    border-radius: 0 25px 0 25px;
+    background-color: var(--silver);
+    color: var(--dodger);
+    
+    text-shadow: 0px 0px 45px var(--white);
+}
+
+.head {
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.sub-head {
+    margin-top: 10px;
+    padding: 5px 10px;
+    width: 500px;
 }
 
 .header {
     background-image: url(images/LA_skyline.jpg);
+    border-radius: 25px 25px 0px 0px;
     background-size: cover;
     width: 1200px;
     height: 600px;;
@@ -42,6 +132,31 @@ body {
 }
 
 .pics {
-    width: 400px;
+    width: 250px;
     border-radius: 50%;
+    border: 5px solid var(--dodger) ;
+    margin: auto;
+}
+
+
+
+.location1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid black;
+}
+
+.location2 {
+    border: 5px solid black;
+}
+
+.location3 {
+    border: 5px solid black;
+}
+
+.location1, .location2, .location3 {
+    border-radius: 0 25px 0 25px;
+    background-color: var(--silver);
+    padding: 15px 30px;
 }
