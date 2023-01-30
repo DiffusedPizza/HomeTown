@@ -53,15 +53,6 @@ body {
 }
 
 .business-card {
-    /*
-    COME BACK AND EDIT THIS SECTION
-    DISPLAY FLEX ISN'T OPERATING CORRECTLY
-    CHECK SYNTAX
-    POSSIBLE FIX INCLUDES CHANGING DIV ORDER
-    SUCH AS BUSINESS CARD APP
-    DOUBLE CHECK AND EDIT THIS COULD 
-    BE AN EASY FIX
-    */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -70,12 +61,6 @@ body {
     border: 5px solid black;
     border-radius: 25px 25px 0 0;
     background-color: var(--dodger);
-    /*
-    POSSIBLE TEXT SHADOW HERE
-    DEPENDING ON BUSINESS CARD 
-    BACKGROUND COLORS AND SUCH
-    REVISIT WHEN DESIGINING
-    */
 }
 
 .avatar {
@@ -137,8 +122,6 @@ body {
     border: 5px solid var(--dodger) ;
     margin: auto;
 }
-
-
 
 .location1 {
     display: flex;
